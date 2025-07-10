@@ -66,8 +66,8 @@ aside ul li:hover span {
 #close_arrow i {
   font-size: 2rem;
   position: absolute;
-  bottom: 25%;
-  left: 60%;
+  bottom: 5%;
+  left: 10%;
   cursor: pointer;
   transition: all 0.5s ease;
 }
