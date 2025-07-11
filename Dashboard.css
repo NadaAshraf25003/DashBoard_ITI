@@ -9,12 +9,9 @@
 }
 :root {
   --primary: rgb(10, 112, 202);
-  /* --secondary: #1e293b; */
-  /* --accent: #7c3aed; */
   --light: #f8fafc;
   --dark: #0f172a;
   --gray: #cfd4dc;
-  /* --success: #10b981; */
   --warning: #f59e0b;
 }
 
@@ -31,7 +28,6 @@ aside {
   flex-direction: column;
   gap: 2rem;
   position: relative;
-  /* align-items: center; */
 }
 aside i {
   font-size: 0.8rem;
@@ -243,6 +239,9 @@ main {
     width: 250px;
     transition: left 0.3s ease;
     z-index: 100;
+  }
+  aside .head , aside .main ul{
+    margin-bottom: 40px;
   }
   .menu-toggle,
   #close_arrow {
