@@ -12,6 +12,7 @@
   --light: #f8fafc;
   --dark: #0f172a;
   --gray: #cfd4dc;
+  --text: #64748b;
   --warning: #f59e0b;
 }
 
@@ -161,13 +162,15 @@ main {
 .card {
   background-color: var(--light);
   border-radius: 10px;
-  padding: 1.8rem;
+  padding: 2rem 2rem 5rem;
   margin: 1rem;
   border-left: 4px var(--warning) solid;
   display: flex;
   flex-direction: column;
   gap: 5px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 .card h3:nth-child(1),
 .card p:nth-child(2) {
@@ -178,15 +181,21 @@ main {
 .card .icons:nth-child(3) {
   align-self: flex-end;
   justify-content: flex-end;
-  padding-top: 10px;
+  position: absolute;
+  top: 70%;
 }
 .card .icons i {
   padding: 5px 10px;
 }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
 .card p,
 .card2 p {
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: var(--text);
 }
 .card2 {
   background-color: var(--light);
@@ -199,7 +208,7 @@ main {
 }
 .card2 .item:nth-child(1),
 .card2 .item:nth-child(2) {
-  border-bottom: 0.9px solid var(--dark);
+  border-bottom: 1px solid #d5dde8;
 }
 .card2 .item2 {
   display: flex;
@@ -240,7 +249,8 @@ main {
     transition: left 0.3s ease;
     z-index: 100;
   }
-  aside .head , aside .main ul{
+  aside .head,
+  aside .main ul {
     margin-bottom: 40px;
   }
   .menu-toggle,
